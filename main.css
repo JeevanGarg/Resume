@@ -20,6 +20,7 @@ body {
 
 
 
+
 /* Horizontal Lists */
 
 .horizontal-list {
@@ -52,7 +53,6 @@ body {
 .text-center {
     text-align: center;
 }
-
 
 
 /* Name and Social Icons*/
@@ -262,7 +262,7 @@ section:nth-child(2n + 1) {
 }
 
 .experience-designation {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .experience-company-name {
@@ -358,8 +358,11 @@ section:nth-child(2n + 1) {
 }
 
 #contact-container {
+   
     display: flex;
 }
+
+
 
 #my-details-container {
     width: 35%;
@@ -401,6 +404,7 @@ section:nth-child(2n + 1) {
     vertical-align: bottom;
     margin-right: 0.5rem;
 }
+
 
 
 #contact-form input,
@@ -453,6 +457,58 @@ button:focus {
 }
 
 
+/* @media screen and (max-width:550px)
+{
+    #contact-form {
+    display: inline-block;
+        margin-left: 30vw;
+        
+}
+    #contact-container {
+     
+    display: block;
+}
+    #my-details-container{
+        margin-left: 35vw;
+    }
+} */
+
+@media screen and (max-width: 600px) {
+	#contact-container {
+		width: 80%;
+		flex-direction: column;
+	}
+	#contact-form-container {
+		width: 80%;
+	}
+	
+	#contact-form button{
+		margin-right: 50px;
+	}
+    
+    #my-details-container h3{
+        margin-left: 22%;
+        margin-top: 7%
+    }
+    #my-details-container{
+        width: 80%;
+		margin-top: 10%;
+        margin-left: auto;
+    }
+	/* #my-details-container div {
+	    display: block;
+	    margin: 20px auto;
+	}
+	#contact-form-container div p {
+	    margin: 0px;
+	}
+	#my-details-container span:nth-child(2) {
+	    margin: 0px;
+	    display: inline-block;
+	    width: 100%;
+	    text-align: center;
+	} */
+}
 
 /* Common Margin Classes */
 
@@ -499,10 +555,12 @@ button:focus {
 }
 
 .mb-light-purple {
-    background-color: #93738c;
+    background-color: #0099CC;
 }
 
-
+.mb-red{
+    background-color: #CC0000;
+}
 
 /*Percentage Classes */
 
@@ -519,4 +577,26 @@ button:focus {
 .fifty-percent {
     height: inherit;
     width: 50%;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -10.2% !important;
+    }
+
+    #timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+    /* .experience-designation{
+        font-size: 20px;
+    } */
 }

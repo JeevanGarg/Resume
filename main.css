@@ -127,7 +127,7 @@ section:nth-child(2n + 1) {
     height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 20vh;
 }
 
 #my-image img {
@@ -582,10 +582,7 @@ button:focus {
 
 @media only screen and (max-width: 768px) {
 
-    #my-image {
-   
-    margin-top: 2vh;
-}
+    
     .timeline-box {
         width: 90%;
         left: 10% !important;

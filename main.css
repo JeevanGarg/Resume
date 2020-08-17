@@ -543,7 +543,12 @@ button:focus {
 .m-blue {
     color: #2857a4;
 }
-
+.mb-green {
+    background-color: green;
+}
+.mb-purple {
+    background-color: purple;
+}
 .mb-blue {
     background-color: #2857a4;
 }
